@@ -1,6 +1,6 @@
-import React from 'react';
-import { Mail, Facebook } from 'lucide-react';
-import logo from '../assets/logo.png';
+import React from "react";
+import { Mail, Facebook, Github } from "lucide-react";
+import logo from "../assets/logo.png";
 
 const Footer: React.FC = () => {
   return (
@@ -9,9 +9,9 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="flex items-center mb-4">
-              <img 
-                src= {logo}
-                alt="مكتبتي" 
+              <img
+                src={logo}
+                alt="مكتبتي"
                 className="w-12 h-12 rounded-xl ml-3"
               />
               <div>
@@ -20,47 +20,105 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-blue-200 mb-4">
-              تطبيق شامل يضم كل ما يحتاجه المسلم في حياته اليومية من أدعية وأذكار وقصص الأنبياء والقرآن الكريم.
+              تطبيق شامل يضم كل ما يحتاجه المسلم في حياته اليومية من أدعية
+              وأذكار وقصص الأنبياء والقرآن الكريم.
             </p>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-bold mb-4">روابط مهمة</h3>
             <ul className="space-y-2">
               <li>
-                <a href="https://play.google.com/store/apps/details?id=com.walid.maktbti" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white transition-all">تحميل التطبيق</a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.walid.maktbti"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-200 hover:text-white transition-all"
+                >
+                  تحميل التطبيق
+                </a>
               </li>
               <li>
-                <a href="https://sites.google.com/view/appmaktbti/home" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white transition-all">سياسة الخصوصية</a>
+                <a
+                  href="https://sites.google.com/view/appmaktbti/home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-200 hover:text-white transition-all"
+                >
+                  سياسة الخصوصية
+                </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/App.Maktbti" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white transition-all">صفحة الفيسبوك</a>
+                <a
+                  href="https://www.facebook.com/App.Maktbti"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-200 hover:text-white transition-all"
+                >
+                  صفحة الفيسبوك
+                </a>
               </li>
               <li>
-                <a href="https://www.youtube.com/watch?v=Jqe5QBtN4dg" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white transition-all">فيديو تعريفي للتطبيق</a>
+                <a
+                  href="https://www.youtube.com/watch?v=Jqe5QBtN4dg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-200 hover:text-white transition-all"
+                >
+                  فيديو تعريفي للتطبيق
+                </a>
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-bold mb-4">تواصل معنا</h3>
             <div className="space-y-2">
               <div className="flex items-center">
                 <Mail className="ml-2 w-5 h-5 text-blue-300" />
-                <a href="mailto:walid_fekry@hotmail.com" className="text-blue-200 hover:text-white transition-all">walid_fekry@hotmail.com</a>
+                <a
+                  href="mailto:walid_fekry@hotmail.com"
+                  className="text-blue-200 hover:text-white transition-all"
+                >
+                  walid_fekry@hotmail.com
+                </a>
               </div>
               <div className="flex items-center">
                 <Facebook className="ml-2 w-5 h-5 text-blue-300" />
-                <a href="https://www.facebook.com/App.Maktbti" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white transition-all">App.Maktbti</a>
+                <a
+                  href="https://www.facebook.com/App.Maktbti"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-200 hover:text-white transition-all"
+                >
+                  App.Maktbti
+                </a>
               </div>
             </div>
           </div>
         </div>
-        
         <div className="border-t border-blue-800 pt-8 text-center">
           <p className="mb-2">© 2025 مكتبتي - جميع الحقوق محفوظة</p>
-          <p className="text-blue-300">
-            تم تطوير التطبيق بواسطة ❤️ Walid Fekry
+          <p className="text-blue-300 flex justify-center items-center gap-2">
+            تم تطوير التطبيق بواسطة ❤️
+            <a
+              href="https://walid-fekry.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-200 hover:text-white transition-all"
+            >
+              Walid Fekry
+            </a>{" "}
+            ||{" "}
+            <a
+              href="https://github.com/WalidFekry/Maktbti-Landing-Page"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-blue-200 hover:text-white transition-all"
+            >
+              <Github className="ml-1 w-5 h-5 text-blue-300" />
+              احصل على هذا القالب
+            </a>
           </p>
         </div>
       </div>
